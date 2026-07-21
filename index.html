@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRÂM ANH | Production • Account Executive • Social Media Strategic Portfolio</title>
+  <meta name="description" content="Official Portfolio of Tram Anh - Artist Assistant Management, Account Client, Event Planner & Production Assistant at Entertainment, Hotwave Media & District K.">
+
+  <!-- Google Fonts: Outfit (Geometric Display) & Plus Jakarta Sans (Clean Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- Ambient Pink Glow & Mouse Spotlight Container -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="mouse-spotlight" id="mouseSpotlight"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-mark">TA</span>
+        <span class="logo-text">TRÂM ANH<span class="logo-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#expertise" class="nav-item">Expertise</a>
+        <a href="#workflow" class="nav-item">Workflow</a>
+        <a href="#slides" class="nav-item">Portfolio Deck</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="social-header-icons">
+          <a href="mailto:lptramanh2002@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.instagram.com/lptram_anh?igsh=MXc1cXc2eDZ1cWJkNQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1D4Kmk7Vpy/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+
+        <a href="#contact" class="btn btn-primary btn-glow-pulse">Let's Work</a>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <!-- Main Title Stage -->
+        <div class="hero-main-title reveal reveal-up">
+          <span class="edition-label">2026 edition</span>
+          
+          <h1 class="giant-title" id="heroGiantTitle">
+            <span class="letter">p</span><span class="letter">o</span><span class="letter">r</span><span class="letter">t</span><span class="letter">f</span><span class="letter">o</span><span class="letter">l</span><span class="letter">i</span><span class="letter">o</span>
+          </h1>
+
+          <!-- Decorative Hatched Lines & Arrow -->
+          <div class="hatched-line-decor">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><i class="fa-solid fa-arrow-down-long"></i>
+          </div>
+
+          <div class="hero-pills">
+            <span class="pink-pill float-1">artist assistant management</span>
+            <span class="pink-pill float-2">social media & production</span>
+            <span class="pink-pill float-3">account client</span>
+          </div>
+        </div>
+
+        <!-- Hero Split Grid: Bio & Interactive 3D Avatar -->
+        <div class="hero-split-grid" id="about">
+          <div class="hero-bio-text reveal reveal-left">
+            <div class="typewriter-tag-wrapper">
+              <span class="bio-tag-prefix">ROLE:</span>
+              <span class="bio-tag-dynamic" id="dynamicRoleText">CREATIVE PRODUCER</span>
+              <span class="cursor-blink">|</span>
+            </div>
+
+            <h2>Hello, my name is <span class="text-pink hover-underline">Trâm Anh.</span></h2>
+            <p>
+              Working in the creative & entertainment industry with sharp aesthetic thinking and a sleek minimalist style. Specialized in artist PR management, social media strategic planning, brand sponsorship proposals, and on-set production for Top Trending MVs & entertainment events.
+            </p>
+
+            <div class="hero-stats-row">
+              <div class="mini-stat">
+                <span class="stat-number counter" data-target="12">0</span>
+                <span class="stat-desc">Portfolio Deck Slides</span>
+              </div>
+              <div class="mini-stat">
+                <span class="stat-number counter" data-target="3">0</span>
+                <span class="stat-desc">Core Pillar Companies</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="#slides" class="btn btn-primary btn-glow-pulse">
+                <i class="fa-solid fa-images"></i> Explore 12 Portfolio Slides
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fa-solid fa-paper-plane"></i> Contact Me
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive 3D Tilt Portrait Frame -->
+          <div class="portrait-wrapper reveal reveal-right">
+            <div class="portrait-tilt-container" id="portraitContainer">
+              <div class="portrait-frame">
+                <img src="tram_anh_hero.jpg" alt="Trâm Anh Avatar" class="hero-avatar-img">
+                <div class="portrait-tag"><i class="fa-solid fa-sparkles text-pink"></i> TRÂM ANH • HCMC</div>
+              </div>
+
+              <!-- Interactive Floating Badges -->
+              <div class="floating-hero-badge badge-1 float-slow">
+                <i class="fa-solid fa-crown text-pink"></i>
+                <div>
+                  <div class="f-title">Entertainment</div>
+                  <div class="f-sub">Artist Management</div>
+                </div>
+              </div>
+
+              <div class="floating-hero-badge badge-2 float-reverse">
+                <i class="fa-solid fa-star text-pink"></i>
+                <div>
+                  <div class="f-title">Top Chart MVs</div>
+                  <div class="f-sub">18M+ TikTok Views</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="hero-bottom-bar reveal reveal-up">
+          <span>MARKETING & PRODUCTION PORTFOLIO</span>
+          <span class="scroll-indicator"><i class="fa-solid fa-angle-down"></i> SCROLL DOWN</span>
+          <span>ENTERTAINMENT • AGENCY • F&B NIGHTLIFE</span>
+        </div>
+      </div>
+
+      <!-- Pink Marquee Bar -->
+      <div class="pink-marquee">
+        <div class="marquee-track">
+          <span>ENTERTAINMENT • HOTWAVE MEDIA LIMITED • DISTRICT K NIGHTLIFE • SPONSORSHIP PROPOSAL • ON-SET PRODUCTION • PR BOOKING • </span>
+          <span>ENTERTAINMENT • HOTWAVE MEDIA LIMITED • DISTRICT K NIGHTLIFE • SPONSORSHIP PROPOSAL • ON-SET PRODUCTION • PR BOOKING • </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE BIG TYPOGRAPHY SECTION -->
+    <section class="section expertise-section" id="expertise">
+      <div class="container">
+        <div class="section-header center reveal reveal-up">
+          <span class="section-tag">EXPERTISE</span>
+          <h2 class="section-title">Core Competencies</h2>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="exp-item reveal reveal-up">
+            artist assistant management <span class="exp-num">01</span>
+          </div>
+          <div class="exp-item reveal reveal-up">
+            social media & content strategy <span class="exp-num">02</span>
+          </div>
+          <div class="exp-item reveal reveal-up">
+            sponsorship proposal pitching <span class="exp-num">03</span>
+          </div>
+          <div class="exp-item reveal reveal-up">
+            on-set production & bts content <span class="exp-num">04</span>
+          </div>
+          <div class="exp-item reveal reveal-up">
+            event planning & nightlife activation <span class="exp-num">05</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE PILLARS SECTION -->
+    <section class="section pillars-section">
+      <div class="container">
+        <div class="section-header center reveal reveal-up">
+          <span class="section-tag">CORE PILLARS</span>
+          <h2 class="section-title">3 Key Professional Pillars</h2>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1: Entertainment -->
+          <div class="pillar-card glass-card reveal reveal-up">
+            <div class="pillar-header">
+              <div class="pillar-icon"><i class="fa-solid fa-building-ngo"></i></div>
+              <span class="pillar-type">ENTERTAINMENT</span>
+            </div>
+            <h3>Entertainment</h3>
+            <ul class="pillar-list">
+              <li><i class="fa-solid fa-check"></i> Artist Assistant Management</li>
+              <li><i class="fa-solid fa-check"></i> Fan Community Development</li>
+              <li><i class="fa-solid fa-check"></i> Project & MV Coordination</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2: Hotwave Media -->
+          <div class="pillar-card glass-card reveal reveal-up">
+            <div class="pillar-header">
+              <div class="pillar-icon"><i class="fa-solid fa-rectangle-ad"></i></div>
+              <span class="pillar-type">AGENCY</span>
+            </div>
+            <h3>Hotwave Media Limited</h3>
+            <ul class="pillar-list">
+              <li><i class="fa-solid fa-check"></i> Account Client Executive</li>
+              <li><i class="fa-solid fa-check"></i> Commercial & TikTok Production</li>
+              <li><i class="fa-solid fa-check"></i> Agency Brief & Scriptwriting</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3: District K F&B -->
+          <div class="pillar-card glass-card reveal reveal-up">
+            <div class="pillar-header">
+              <div class="pillar-icon"><i class="fa-solid fa-martini-glass-citrus"></i></div>
+              <span class="pillar-type">F&B NIGHTLIFE</span>
+            </div>
+            <h3>District K (DX)</h3>
+            <ul class="pillar-list">
+              <li><i class="fa-solid fa-check"></i> Event Planner & Social Media</li>
+              <li><i class="fa-solid fa-check"></i> Nightlife Strategy Planning</li>
+              <li><i class="fa-solid fa-check"></i> Creative Activation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORIZONTAL TIMELINE SECTION -->
+    <section class="section timeline-section" id="experience">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">CAREER TIMELINE</span>
+          <h2 class="section-title">Work History & Experience</h2>
+        </div>
+
+        <!-- Horizontal Timeline Track -->
+        <div class="horizontal-timeline-track reveal reveal-up">
+          <div class="timeline-step">
+            <div class="step-year">10/2023 - 01/2024</div>
+            <div class="step-company">SOSO STATION</div>
+            <div class="step-role">Marketing Intern</div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-year">12/2023 - 2025</div>
+            <div class="step-company">KHÈ GROUP (DISTRICT K)</div>
+            <div class="step-role">Event Planner Intern & Strategy</div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-year">04/2024 - PRESENT</div>
+            <div class="step-company">MÁI ẤM SÀI GÒN</div>
+            <div class="step-role">Event Host & Program MC</div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-year">12/2024</div>
+            <div class="step-company">R PARFUMS</div>
+            <div class="step-role">Social Freelancer Project</div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-year">FREELANCE</div>
+            <div class="step-company">ARTIST & PRODUCTION TEAM</div>
+            <div class="step-role">Artist PR Manager & Production Assistant</div>
+          </div>
+        </div>
+
+        <!-- Detailed Work Experience Grid -->
+        <div class="experience-details-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem; margin-top: 3rem;">
+
+          <!-- 1. SOSO STATION -->
+          <div class="exp-detail-card glass-card reveal reveal-up">
+            <div class="exp-card-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 800; color: #fff;">SOSO STATION CO., LTD</h3>
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--pink-primary);">MARKETING INTERN</span>
+              </div>
+              <span style="font-size: 0.78rem; font-weight: 800; background: #151515; border: 1px solid var(--border-dark); padding: 0.3rem 0.7rem; border-radius: 20px; color: var(--text-muted);">10/2023 - 01/2024</span>
+            </div>
+            <ul class="pillar-list" style="font-size: 0.9rem; color: var(--text-secondary);">
+              <li><i class="fa-solid fa-check"></i> Built marketing plans & executed digital advertising campaigns for brand promotion.</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Fanpage:</strong> 4 posts, 2 clips/week. Managed ADS performance gaining ~3,000 new followers & 20% engagement growth in 1 quarter.</li>
+              <li><i class="fa-solid fa-check"></i> <strong>TikTok:</strong> Booked KOLs & TikTokers for product launches. On-Air 12 clips/month hitting 85% target (~510M VND).</li>
+            </ul>
+          </div>
+
+          <!-- 2. MÁI ẤM SÀI GÒN -->
+          <div class="exp-detail-card glass-card reveal reveal-up">
+            <div class="exp-card-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 800; color: #fff;">MÁI ẤM SÀI GÒN</h3>
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--pink-primary);">EVENT HOST & MC</span>
+              </div>
+              <span style="font-size: 0.78rem; font-weight: 800; background: #151515; border: 1px solid var(--border-dark); padding: 0.3rem 0.7rem; border-radius: 20px; color: var(--text-muted);">04/2024 - PRESENT</span>
+            </div>
+            <ul class="pillar-list" style="font-size: 0.9rem; color: var(--text-secondary);">
+              <li><i class="fa-solid fa-check"></i> Key organizing committee member for Mái Ấm team. Successfully executed 5 high-mountain charity trips for 300-600 children.</li>
+              <li><i class="fa-solid fa-check"></i> Raised 60 - 150 million VND per trip to support underprivileged children in remote areas.</li>
+              <li><i class="fa-solid fa-check"></i> Main event MC & Host, scriptwriting for full stage programs, performances, and interactive games.</li>
+            </ul>
+          </div>
+
+          <!-- 3. R PARFUMS -->
+          <div class="exp-detail-card glass-card reveal reveal-up">
+            <div class="exp-card-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 800; color: #fff;">R PARFUMS</h3>
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--pink-primary);">SOCIAL FREELANCER PROJECT</span>
+              </div>
+              <span style="font-size: 0.78rem; font-weight: 800; background: #151515; border: 1px solid var(--border-dark); padding: 0.3rem 0.7rem; border-radius: 20px; color: var(--text-muted);">12/2024</span>
+            </div>
+            <ul class="pillar-list" style="font-size: 0.9rem; color: var(--text-secondary);">
+              <li><i class="fa-solid fa-check"></i> Exhibition: <em>"Letters from 221B Baker Street: Scents of Shadow"</em>.</li>
+              <li><i class="fa-solid fa-check"></i> Created & produced #1 viral TikTok clip with ~300k views on the channel.</li>
+              <li><i class="fa-solid fa-check"></i> Wrote exhibition PR content, handled photography/videography, and guest coordination.</li>
+            </ul>
+          </div>
+
+          <!-- 4. KHÈ GROUP -->
+          <div class="exp-detail-card glass-card reveal reveal-up">
+            <div class="exp-card-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 800; color: #fff;">KHÈ GROUP (DISTRICT K & PALMORA)</h3>
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--pink-primary);">EVENT PLANNER INTERN</span>
+              </div>
+              <span style="font-size: 0.78rem; font-weight: 800; background: #151515; border: 1px solid var(--border-dark); padding: 0.3rem 0.7rem; border-radius: 20px; color: var(--text-muted);">12/2023 - 2025</span>
+            </div>
+            <ul class="pillar-list" style="font-size: 0.9rem; color: var(--text-secondary);">
+              <li><i class="fa-solid fa-check"></i> Developed monthly event concepts for District K restaurant & Palmora grand launch project.</li>
+              <li><i class="fa-solid fa-check"></i> Sourced & booked guest speakers, performers, and artists for special venue events.</li>
+              <li><i class="fa-solid fa-check"></i> Managed performance contracts, artist bookings, and monthly budget estimations.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5-STEP WORKFLOW SECTION -->
+    <section class="section workflow-section" id="workflow">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">PROFESSIONAL WORKFLOW</span>
+          <h2 class="section-title">5-Step Campaign & Production Execution</h2>
+        </div>
+
+        <div class="workflow-grid">
+          <div class="step-card glass-card reveal reveal-up">
+            <div class="step-num">01</div>
+            <h3>Creative Concept Development</h3>
+            <p>Participating in creative ideation and storyboard development with the production crew to align MV visuals with project goals.</p>
+          </div>
+
+          <div class="step-card glass-card reveal reveal-up">
+            <div class="step-num">02</div>
+            <h3>Social Media Strategic Planning</h3>
+            <p>Partnering with teams to outline multi-platform social media communication strategies and brand tone.</p>
+          </div>
+
+          <div class="step-card glass-card reveal reveal-up">
+            <div class="step-num">03</div>
+            <h3>Sponsorship Proposal Pitching</h3>
+            <p>Directing proposal drafting and brand partnership decks to connect, negotiate, and pitch sponsorships for MVs, Showcases & Mini Concerts.</p>
+            <div class="proposal-tags">
+              <span class="tag-item">QUÂN A.P Mini Concert</span>
+              <span class="tag-item">The Next Chapter Showcase</span>
+              <span class="tag-item">FALLING WITH YOU</span>
+              <span class="tag-item">THIÊN MỆNH</span>
+            </div>
+          </div>
+
+          <div class="step-card glass-card reveal reveal-up">
+            <div class="step-num">04</div>
+            <h3>Media Relations & PR Booking</h3>
+            <p>Managing PR press bookings, executing KOL/influencer bookings, and curating TikTok viral content for maximum reach.</p>
+          </div>
+
+          <div class="step-card glass-card reveal reveal-up">
+            <div class="step-num">05</div>
+            <h3>On-set Production & BTS Content</h3>
+            <p>On-set management, producing behind-the-scenes content libraries for PR and press campaigns.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SLIDES SHOWCASE CAROUSEL (3D COVERFLOW DEPTH STREAM) -->
+    <section class="section slides-section" id="slides">
+      <div class="container">
+        <div class="section-header space-between reveal reveal-up">
+          <div>
+            <span class="section-tag">3D DEPTH STREAM CAROUSEL</span>
+            <h2 class="section-title">12 Interactive Portfolio Deck Slides</h2>
+          </div>
+
+          <div class="slide-counter-badge">
+            <span id="currentSlideNum">01</span> / <span>12</span>
+          </div>
+        </div>
+
+        <!-- 3D Coverflow Container Stage -->
+        <div class="coverflow-wrapper reveal reveal-zoom">
+          <button class="coverflow-nav-btn coverflow-prev" id="cfPrevBtn" aria-label="Previous 3D Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="coverflow-stage" id="coverflowStage">
+            <!-- 12 3D Coverflow Cards -->
+            <div class="coverflow-item" data-index="0">
+              <div class="coverflow-img-box">
+                <img src="slide/1.png" alt="Slide 01 - Portfolio Cover" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 01 • Portfolio Cover</span>
+                  <button class="zoom-btn" data-img="slide/1.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverflow-item" data-index="1">
+              <div class="coverflow-img-box">
+                <img src="slide/2.png" alt="Slide 02 - Work Experience" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 02 • Work Experience Pillars</span>
+                  <button class="zoom-btn" data-img="slide/2.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverflow-item" data-index="2">
+              <div class="coverflow-img-box">
+                <img src="slide/3.png" alt="Slide 03 - Workflow" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 03 • Production Workflow</span>
+                  <button class="zoom-btn" data-img="slide/3.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverflow-item" data-index="3">
+              <div class="coverflow-img-box">
+                <img src="slide/4.png" alt="Slide 04 - On-set Production" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 04 • On-set Production & BTS</span>
+                  <button class="zoom-btn" data-img="slide/4.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverflow-item" data-index="4">
+              <div class="coverflow-img-box">
+                <img src="slide/5.png" alt="Slide 05 - MV Thiên Mệnh" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 05 • MV Thiên Mệnh & Falling With You</span>
+                  <button class="zoom-btn" data-img="slide/5.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverflow-item" data-index="5">
+              <div class="coverflow-img-box">
+                <img src="slide/6.png" alt="Slide 06 - MV Đi Đâu Đấy" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 06 • MV Đi Đâu Đấy & Lửa Gần Rơm</span>
+                  <button class="zoom-btn" data-img="slide/6.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverflow-item" data-index="6">
+              <div class="coverflow-img-box">
+                <img src="slide/7.png" alt="Slide 07 - Case Study" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 07 • Project Case Study</span>
+                  <button class="zoom-btn" data-img="slide/7.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverflow-item" data-index="7">
+              <div class="coverflow-img-box">
+                <img src="slide/8.png" alt="Slide 08 - Case Study" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 08 • Project Case Study</span>
+                  <button class="zoom-btn" data-img="slide/8.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverflow-item" data-index="8">
+              <div class="coverflow-img-box">
+                <img src="slide/9.png" alt="Slide 09 - Case Study" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 09 • Project Case Study</span>
+                  <button class="zoom-btn" data-img="slide/9.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverflow-item" data-index="9">
+              <div class="coverflow-img-box">
+                <img src="slide/10.png" alt="Slide 10 - Case Study" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 10 • Project Case Study</span>
+                  <button class="zoom-btn" data-img="slide/10.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverflow-item" data-index="10">
+              <div class="coverflow-img-box">
+                <img src="slide/11.png" alt="Slide 11 - Case Study" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 11 • Project Case Study</span>
+                  <button class="zoom-btn" data-img="slide/11.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="coverflow-item" data-index="11">
+              <div class="coverflow-img-box">
+                <img src="slide/12.png" alt="Slide 12 - Contact" class="coverflow-img">
+                <div class="coverflow-info-overlay">
+                  <span class="coverflow-title">Slide 12 • Thank You & Contact</span>
+                  <button class="zoom-btn" data-img="slide/12.png"><i class="fa-solid fa-expand"></i> Zoom HD</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="coverflow-nav-btn coverflow-next" id="cfNextBtn" aria-label="Next 3D Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <!-- 3D Dots Indicator -->
+          <div class="coverflow-dots-bar" id="cfDotsBar">
+            <button class="cf-dot active" data-cfindex="0">1</button>
+            <button class="cf-dot" data-cfindex="1">2</button>
+            <button class="cf-dot" data-cfindex="2">3</button>
+            <button class="cf-dot" data-cfindex="3">4</button>
+            <button class="cf-dot" data-cfindex="4">5</button>
+            <button class="cf-dot" data-cfindex="5">6</button>
+            <button class="cf-dot" data-cfindex="6">7</button>
+            <button class="cf-dot" data-cfindex="7">8</button>
+            <button class="cf-dot" data-cfindex="8">9</button>
+            <button class="cf-dot" data-cfindex="9">10</button>
+            <button class="cf-dot" data-cfindex="10">11</button>
+            <button class="cf-dot" data-cfindex="11">12</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & TOOLKIT SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header center reveal reveal-up">
+          <span class="section-tag">CORE COMPETENCIES</span>
+          <h2 class="section-title">Professional Skills & Toolkit</h2>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Software Toolkit -->
+          <div class="skills-block glass-card reveal reveal-left">
+            <h3 class="block-title"><i class="fa-solid fa-laptop-code"></i> Software & Production Tools</h3>
+            <div class="skill-tags">
+              <div class="skill-pill"><i class="fa-brands fa-figma"></i> Figma Design</div>
+              <div class="skill-pill"><i class="fa-solid fa-scissors"></i> CapCut Video Editing</div>
+              <div class="skill-pill"><i class="fa-solid fa-palette"></i> Canva Pro</div>
+              <div class="skill-pill"><i class="fa-solid fa-camera"></i> Photography</div>
+              <div class="skill-pill"><i class="fa-solid fa-file-excel"></i> Spreadsheets & Booking Lists</div>
+            </div>
+          </div>
+
+          <!-- Professional Expertise -->
+          <div class="skills-block glass-card reveal reveal-right">
+            <h3 class="block-title"><i class="fa-solid fa-sliders"></i> Media & Production Expertise</h3>
+            <div class="skill-tags">
+              <div class="skill-pill active"><i class="fa-solid fa-crown"></i> Artist Assistant Management</div>
+              <div class="skill-pill active"><i class="fa-solid fa-file-signature"></i> Sponsorship Proposal Pitching</div>
+              <div class="skill-pill active"><i class="fa-solid fa-newspaper"></i> PR Booking & Media Relations</div>
+              <div class="skill-pill active"><i class="fa-solid fa-list-check"></i> On-set Production & CallSheet</div>
+              <div class="skill-pill active"><i class="fa-solid fa-users"></i> Fan Community Management</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages & Certificates Bento Showcase -->
+        <div class="cert-row">
+          <!-- PROMINENT FEATURED IELTS 6.5 CARD -->
+          <div class="ielts-featured-card reveal reveal-left">
+            <div class="ielts-score-badge">
+              <span>6.5</span>
+              <span class="ielts-score-label">IELTS</span>
+            </div>
+
+            <div class="ielts-info">
+              <div class="ielts-badge-tag"><i class="fa-solid fa-award"></i> ENGLISH CERTIFICATE</div>
+              <h3 class="ielts-title">Fluent Professional English (IELTS 6.5)</h3>
+              <p class="ielts-desc">Professional capability in English communication, international brand pitching, and sponsorship proposal writing.</p>
+              <div class="ielts-sub-tags">
+                <span class="sub-tag">International Brand Pitching</span>
+                <span class="sub-tag">Proposal Writing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- VAN LANG UNIVERSITY CARD -->
+          <div class="cert-card glass-card reveal reveal-right">
+            <div class="cert-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <span class="cert-meta-tag">BACHELOR DEGREE (2025)</span>
+              <h3 class="cert-title">Van Lang University Graduate</h3>
+              <p class="cert-desc">Public Relations - Media & Arts Degree. Specialized in event coordination, brand building, and PR strategy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & FOOTER SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box glass-card reveal reveal-zoom">
+          <div class="contact-header">
+            <span class="contact-tag">LET'S CONNECT</span>
+            <h2>Ready to collaborate on top-tier MVs, campaigns & events!</h2>
+            <p>Get in touch with Trâm Anh to discuss Artist Management, Sponsorship Proposals, or Production Coordination.</p>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-item" id="copyEmail">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-val">lptramanh2002@gmail.com</div>
+              </div>
+              <button class="btn-copy" title="Copy Email"><i class="fa-regular fa-copy"></i></button>
+            </div>
+
+            <div class="contact-item" id="copyPhone">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="contact-label">Phone / Zalo</div>
+                <div class="contact-val">+84 (0) 33 7571 847</div>
+              </div>
+              <button class="btn-copy" title="Copy Phone"><i class="fa-regular fa-copy"></i></button>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-val">Ho Chi Minh City, Vietnam</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a href="mailto:lptramanh2002@gmail.com" class="btn btn-primary btn-glow-pulse">
+              <i class="fa-solid fa-paper-plane"></i> Send Direct Email
+            </a>
+            <button class="btn btn-secondary" id="downloadCVBtn">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Trâm Anh's CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">TRÂM ANH<span>.</span></div>
+        <p>© 2026 Tram Anh Portfolio. Entertainment • Hotwave Media • District K.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="mailto:lptramanh2002@gmail.com" class="social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:0337571847" class="social-link" title="Phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://www.instagram.com/lptram_anh?igsh=MXc1cXc2eDZ1cWJkNQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1D4Kmk7Vpy/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="modal-backdrop" id="lightboxModal">
+    <div class="modal-container glass-card lightbox-container">
+      <button class="modal-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+      <div class="lightbox-body">
+        <img src="" id="lightboxImg" alt="Full Slide View">
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i> <span id="toastMsg">Copied to clipboard!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
