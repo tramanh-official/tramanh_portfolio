@@ -1035,47 +1035,153 @@ a {
 }
 .pillar-list li i { color: var(--pink-primary); font-size: 0.85rem; }
 
-/* HORIZONTAL TIMELINE */
-.horizontal-timeline-track {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
+/* VERTICAL DOSSIER TIMELINE SYSTEM */
+.dossier-timeline-container {
   position: relative;
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 2px solid #1c1c1c;
+  max-width: 950px;
+  margin: 2rem auto 0 auto;
+  padding-left: 3rem;
 }
 
-.timeline-step { position: relative; }
-.timeline-step::before {
+.dossier-timeline-container::before {
   content: '';
   position: absolute;
-  top: -1.95rem;
-  left: 0;
-  width: 12px;
-  height: 12px;
+  top: 1.5rem;
+  bottom: 1.5rem;
+  left: 17px;
+  width: 3px;
+  background: linear-gradient(180deg, var(--pink-primary) 0%, rgba(253, 107, 188, 0.2) 100%);
+  box-shadow: 0 0 12px var(--pink-glow);
+}
+
+.dossier-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.dossier-item:last-child {
+  margin-bottom: 0;
+}
+
+.dossier-node {
+  position: absolute;
+  top: 1.75rem;
+  left: -3rem;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: var(--pink-primary);
-  box-shadow: 0 0 10px var(--pink-primary);
-}
-
-.step-year {
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 800;
-  color: var(--text-white);
-  margin-bottom: 0.3rem;
-}
-
-.step-company {
-  font-family: var(--font-display);
-  font-size: 0.95rem;
-  font-weight: 800;
+  background: #000000;
+  border: 2px solid var(--pink-primary);
   color: var(--pink-primary);
-  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  z-index: 10;
+  box-shadow: 0 0 15px var(--pink-glow);
+  transition: var(--transition-fast);
 }
 
-.step-role { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.2rem; }
+.dossier-item:hover .dossier-node {
+  background: var(--pink-primary);
+  color: #000000;
+  transform: scale(1.15);
+  box-shadow: 0 0 25px var(--pink-primary);
+}
+
+.dossier-card {
+  padding: 2.25rem;
+  border-radius: 24px;
+}
+
+.dossier-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #181818;
+}
+
+.dossier-date-badge {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 0.2rem;
+}
+
+.dossier-company {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.dossier-role {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.dossier-metric-pill {
+  background: rgba(253, 107, 188, 0.12);
+  border: 1px solid var(--border-pink);
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(253, 107, 188, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dossier-artist-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #1c1c1c;
+}
+
+.artist-tag-title {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 0.3rem;
+}
+
+.artist-tag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  background: #141414;
+  border: 1px solid var(--border-dark);
+  color: var(--pink-primary);
+  transition: var(--transition-fast);
+}
+
+.artist-tag:hover {
+  background: var(--pink-primary);
+  color: #000000;
+  border-color: var(--pink-primary);
+  box-shadow: 0 0 10px var(--pink-glow);
+}
 
 /* 5-STEP WORKFLOW GRID */
 .workflow-grid {
@@ -1459,4 +1565,7 @@ a {
   .coverflow-nav-btn { width: 44px; height: 44px; font-size: 1.1rem; }
   .ielts-featured-card { flex-direction: column; text-align: center; }
   .ielts-sub-tags { justify-content: center; }
+  .dossier-timeline-container { padding-left: 2rem; }
+  .dossier-node { left: -2.25rem; width: 30px; height: 30px; font-size: 0.75rem; }
+  .dossier-timeline-container::before { left: 13px; }
 }
