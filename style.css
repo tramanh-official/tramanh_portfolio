@@ -1654,6 +1654,40 @@ a {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
 }
 
+/* TOAST NOTIFICATION POPUP */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #111111;
+  border: 1px solid var(--pink-primary);
+  padding: 0.85rem 1.6rem;
+  border-radius: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9), 0 0 20px var(--pink-glow);
+  z-index: 3000;
+  transform: translateY(120px);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-smooth);
+}
+
+.toast.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.toast i {
+  color: var(--pink-primary);
+  font-size: 1.1rem;
+}
+
 /* Responsive Media Queries */
 @media (max-width: 1024px) {
   .pipeline-grid { grid-template-columns: repeat(3, 1fr); }
