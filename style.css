@@ -812,8 +812,8 @@ a {
   text-align: left;
 }
 
-.badge-1 { top: 30px; left: -25px; animation: floatBadge 4s ease-in-out infinite; }
-.badge-2 { bottom: 45px; right: -25px; animation: floatBadge 5s ease-in-out infinite reverse; }
+.badge-1 { top: 15px; left: -85px; animation: floatBadge 4s ease-in-out infinite; }
+.badge-2 { bottom: 30px; right: -85px; animation: floatBadge 5s ease-in-out infinite reverse; }
 
 @keyframes floatBadge {
   0%, 100% { transform: translateY(0); }
