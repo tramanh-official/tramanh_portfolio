@@ -1372,6 +1372,288 @@ a {
   transform: scale(1.08);
 }
 
+/* FEATURED IELTS CARD & CERTIFICATES SHOWCASE */
+.cert-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ielts-featured-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(253, 107, 188, 0.16) 0%, rgba(10, 10, 10, 0.98) 100%);
+  border: 2px solid var(--pink-primary);
+  box-shadow: 0 15px 40px -5px var(--pink-glow), inset 0 0 25px rgba(253, 107, 188, 0.15);
+  border-radius: 24px;
+  padding: 2.25rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: var(--transition-smooth);
+}
+
+.ielts-featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px -5px var(--pink-glow), inset 0 0 35px rgba(253, 107, 188, 0.25);
+  border-color: #ffffff;
+}
+
+.ielts-score-badge {
+  background: var(--pink-primary);
+  color: #000000;
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 900;
+  padding: 1.1rem 1.8rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px var(--pink-glow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.ielts-score-label {
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-top: 0.35rem;
+  text-transform: uppercase;
+}
+
+.ielts-info {
+  flex: 1;
+}
+
+.ielts-badge-tag {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--pink-primary);
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ielts-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.ielts-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.ielts-sub-tags {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.sub-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--border-pink);
+  color: #ffffff;
+}
+
+/* VAN LANG DEGREE CARD */
+.cert-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: 24px;
+  padding: 2.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: var(--transition-smooth);
+}
+
+.cert-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-pink);
+  box-shadow: 0 10px 30px -10px var(--pink-glow);
+}
+
+.cert-icon-box {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: var(--pink-subtle);
+  color: var(--pink-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.cert-meta-tag {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: var(--pink-primary);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.cert-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.cert-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 3.5rem;
+  flex-wrap: wrap;
+}
+
+/* FOOTER */
+.footer {
+  padding: 3.5rem 0;
+  border-top: 1px solid #141414;
+  background: #000000;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-logo {
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fd6bbc;
+  text-shadow: 0 0 12px var(--pink-glow);
+  margin-bottom: 0.3rem;
+}
+
+.footer-logo span {
+  color: var(--pink-primary);
+}
+
+.footer-left p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-link {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #111111;
+  border: 1px solid var(--border-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.social-link:hover {
+  background: var(--pink-primary);
+  color: #000000;
+  border-color: var(--pink-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px var(--pink-glow);
+}
+
+/* LIGHTBOX MODAL & TOAST */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(18px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-smooth);
+}
+
+.modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-container {
+  position: relative;
+  max-width: 1100px;
+  padding: 1.5rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: #222222;
+  border: 1px solid var(--border-dark);
+  color: #ffffff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: var(--transition-fast);
+}
+
+.modal-close:hover {
+  background: var(--pink-primary);
+  color: #000000;
+  transform: scale(1.1);
+}
+
+.lightbox-body img {
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
+}
+
 /* Responsive Media Queries */
 @media (max-width: 1024px) {
   .pipeline-grid { grid-template-columns: repeat(3, 1fr); }
