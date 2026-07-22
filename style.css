@@ -1062,42 +1062,29 @@ a {
   margin-left: 0.35rem;
 }
 
-/* DYNAMIC MUSIC VIDEO SHOWCASE POSTER FLOW (CINEMA FILMSTRIP 3D ROLL) */
+/* DYNAMIC MUSIC VIDEO SHOWCASE POSTER FLOW */
 .mv-filmstrip-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.75rem 2rem;
-  margin-top: 2.5rem;
-  padding: 1rem 0.5rem;
-  perspective: 1000px;
+  gap: 2rem;
+  margin-top: 2.25rem;
 }
 
 .mv-poster-card {
   position: relative;
-  background: #090909;
+  background: #0c0c0c;
   border: 1px solid var(--border-dark);
-  border-radius: 18px;
+  border-radius: 20px;
   overflow: hidden;
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+  transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
-  z-index: 1;
 }
 
-/* 3D Alternating Slanted Filmstrip Angles */
-.mv-poster-card:nth-child(1) { transform: rotate(-2.5deg) translateY(0); }
-.mv-poster-card:nth-child(2) { transform: rotate(2.5deg) translateY(-8px); }
-.mv-poster-card:nth-child(3) { transform: rotate(-2deg) translateY(4px); }
-.mv-poster-card:nth-child(4) { transform: rotate(2deg) translateY(-4px); }
-.mv-poster-card:nth-child(5) { transform: rotate(-2.5deg) translateY(6px); }
-.mv-poster-card:nth-child(6) { transform: rotate(2.5deg) translateY(-6px); }
-
-/* Interactive Hover: Straighten & Pop Out with Glowing Neon Border */
 .mv-poster-card:hover {
-  transform: rotate(0deg) scale(1.08) translateY(-12px) !important;
-  z-index: 25;
   border-color: var(--pink-primary);
-  box-shadow: 0 25px 60px -10px rgba(253, 107, 188, 0.45), 0 0 35px var(--pink-glow);
+  box-shadow: 0 16px 45px -8px var(--pink-glow);
+  transform: translateY(-6px);
 }
 
 .mv-poster-img-box {
@@ -1109,54 +1096,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* Filmstrip Perforations Pattern Overlay on Sides */
-.mv-poster-img-box::before,
-.mv-poster-img-box::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 12px;
-  background: repeating-linear-gradient(
-    to bottom,
-    #000000 0px,
-    #000000 12px,
-    transparent 12px,
-    transparent 22px
-  );
-  z-index: 5;
-  opacity: 0.85;
-  pointer-events: none;
-}
-
-.mv-poster-img-box::before {
-  left: 0;
-  border-right: 1px stroke rgba(255, 255, 255, 0.1);
-}
-
-.mv-poster-img-box::after {
-  right: 0;
-  border-left: 1px stroke rgba(255, 255, 255, 0.1);
-}
-
-/* Film Roll Number Badge */
-.film-roll-badge {
-  position: absolute;
-  top: 12px;
-  left: 18px;
-  background: rgba(0, 0, 0, 0.88);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--border-pink);
-  color: var(--pink-primary);
-  font-family: var(--font-display);
-  font-size: 0.7rem;
-  font-weight: 900;
-  padding: 0.25rem 0.65rem;
-  border-radius: 8px;
-  letter-spacing: 1px;
-  z-index: 6;
 }
 
 .mv-poster-img {
