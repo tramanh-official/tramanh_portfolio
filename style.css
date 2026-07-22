@@ -1098,17 +1098,31 @@ a {
   justify-content: center;
 }
 
+.mv-poster-bg-blur {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(24px) brightness(0.55) saturate(1.3);
+  transform: scale(1.25);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .mv-poster-img {
+  position: relative;
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center;
+  z-index: 2;
   transition: var(--transition-smooth);
 }
 
 .mv-poster-card:hover .mv-poster-img {
-  transform: scale(1.05);
-  filter: brightness(0.6);
+  transform: scale(1.04);
+  filter: brightness(0.85);
 }
 
 .mv-play-overlay {
@@ -1120,6 +1134,7 @@ a {
   justify-content: center;
   background: rgba(0, 0, 0, 0.45);
   opacity: 0;
+  z-index: 3;
   transition: var(--transition-smooth);
 }
 
