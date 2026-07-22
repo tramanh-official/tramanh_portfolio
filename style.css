@@ -351,6 +351,21 @@ a {
   box-shadow: 0 0 15px var(--pink-glow);
 }
 
+.logo-signature {
+  font-family: 'Caveat', cursive;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  transition: var(--transition-fast);
+}
+
+.nav-logo:hover .logo-signature {
+  color: var(--pink-primary);
+  text-shadow: 0 0 15px var(--pink-glow);
+}
+
 .logo-dot { color: var(--pink-primary); }
 
 .nav-links {
