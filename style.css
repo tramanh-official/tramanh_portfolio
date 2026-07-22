@@ -247,6 +247,33 @@ a {
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.85rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--pink-primary);
+  box-shadow: 0 0 12px var(--pink-primary), 0 0 22px var(--pink-glow);
+  transition: width 0.4s ease, box-shadow 0.4s ease;
+}
+
+.section-header.center .section-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-header:hover .section-title::after,
+.section-title:hover::after {
+  width: 110px;
+  box-shadow: 0 0 18px var(--pink-primary), 0 0 32px var(--pink-primary);
 }
 
 /* Buttons System */
