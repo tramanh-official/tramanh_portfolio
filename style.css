@@ -352,18 +352,49 @@ a {
 }
 
 .logo-signature {
-  font-family: 'Caveat', cursive;
-  font-size: 2.1rem;
+  font-family: 'Alex Brush', 'Caveat', cursive;
+  font-size: 2.25rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #fd6bbc;
   letter-spacing: 0.5px;
   line-height: 1;
+  text-shadow: 
+    0 0 6px #fd6bbc,
+    0 0 12px #fd6bbc,
+    0 0 24px rgba(253, 107, 188, 0.8),
+    0 0 40px rgba(253, 107, 188, 0.4);
+  animation: neonSignatureGlow 3s ease-in-out infinite alternate;
   transition: var(--transition-fast);
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+
+@keyframes neonSignatureGlow {
+  0% {
+    text-shadow: 
+      0 0 4px #fd6bbc,
+      0 0 10px #fd6bbc,
+      0 0 20px rgba(253, 107, 188, 0.7),
+      0 0 35px rgba(253, 107, 188, 0.3);
+  }
+  100% {
+    text-shadow: 
+      0 0 8px #ffffff,
+      0 0 16px #fd6bbc,
+      0 0 32px #fd6bbc,
+      0 0 50px rgba(253, 107, 188, 0.9),
+      0 0 70px rgba(253, 107, 188, 0.6);
+  }
 }
 
 .nav-logo:hover .logo-signature {
-  color: var(--pink-primary);
-  text-shadow: 0 0 15px var(--pink-glow);
+  color: #ffffff;
+  transform: rotate(-1deg) scale(1.06);
+  text-shadow: 
+    0 0 10px #ffffff,
+    0 0 20px #fd6bbc,
+    0 0 40px #fd6bbc,
+    0 0 60px rgba(253, 107, 188, 1);
 }
 
 .logo-dot { color: var(--pink-primary); }
