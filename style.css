@@ -1063,15 +1063,15 @@ a {
 .mv-filmstrip-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 2rem;
+  margin-top: 2.25rem;
 }
 
 .mv-poster-card {
   position: relative;
-  background: var(--bg-card);
+  background: #0c0c0c;
   border: 1px solid var(--border-dark);
-  border-radius: 18px;
+  border-radius: 20px;
   overflow: hidden;
   transition: var(--transition-smooth);
   display: flex;
@@ -1080,16 +1080,16 @@ a {
 
 .mv-poster-card:hover {
   border-color: var(--pink-primary);
-  box-shadow: 0 12px 30px -8px var(--pink-glow);
-  transform: translateY(-4px);
+  box-shadow: 0 16px 45px -8px var(--pink-glow);
+  transform: translateY(-6px);
 }
 
 .mv-poster-img-box {
   position: relative;
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
-  background: #050505;
+  background: #040404;
   display: flex;
   align-items: center;
   justify-content: center;
