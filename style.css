@@ -748,6 +748,25 @@ a {
   color: var(--pink-primary);
 }
 
+/* 1-SECOND PERIODIC NEON BLINK ANIMATION FOR 2+ YRS EXPERIENCE */
+.stat-pulse-glow .stat-number {
+  animation: neonBlink1s 1s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes neonBlink1s {
+  0%, 100% {
+    color: var(--pink-primary);
+    text-shadow: 0 0 6px var(--pink-glow);
+    opacity: 1;
+  }
+  50% {
+    color: #ffffff;
+    text-shadow: 0 0 22px var(--pink-primary), 0 0 40px var(--pink-primary);
+    opacity: 0.7;
+  }
+}
+
 .stat-desc { font-size: 0.8rem; color: var(--text-muted); }
 .hero-cta-group { display: flex; gap: 1rem; flex-wrap: wrap; }
 
