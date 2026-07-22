@@ -1738,6 +1738,48 @@ a {
   font-size: 1.1rem;
 }
 
+/* DOSSIER FEATURED ARTISTS & SKILLS TAGS */
+.dossier-artist-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.65rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.12);
+}
+
+.artist-tag-title {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  margin-right: 0.25rem;
+}
+
+.artist-tag {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--pink-primary);
+  background: rgba(253, 107, 188, 0.08);
+  border: 1px solid rgba(253, 107, 188, 0.3);
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+}
+
+.artist-tag:hover {
+  background: var(--pink-primary);
+  color: #000000;
+  box-shadow: 0 0 15px var(--pink-glow);
+  transform: translateY(-2px);
+}
+
 /* Responsive Media Queries */
 @media (max-width: 1024px) {
   .pipeline-grid { grid-template-columns: repeat(3, 1fr); }
