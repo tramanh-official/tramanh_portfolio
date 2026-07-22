@@ -77,50 +77,55 @@ body {
   box-shadow: 0 0 12px var(--pink-primary);
 }
 
-/* SCROLL REVEAL ANIMATIONS FOR ALL COMPONENTS */
+/* 3D PARALLAX TILT & DEPTH UNFOLD SCROLL ENGINE */
 .reveal {
   opacity: 0;
   will-change: opacity, transform;
+  transform-style: preserve-3d;
 }
 
 .reveal-up {
-  transform: translateY(45px);
+  transform: perspective(1200px) rotateX(16deg) translateY(55px) scale(0.94);
+  transform-origin: center top;
   transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-up.revealed {
   opacity: 1;
-  transform: translateY(0);
+  transform: perspective(1200px) rotateX(0deg) translateY(0) scale(1);
 }
 
 .reveal-left {
-  transform: translateX(-50px);
+  transform: perspective(1200px) rotateY(-14deg) translateX(-55px) scale(0.94);
+  transform-origin: right center;
   transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-left.revealed {
   opacity: 1;
-  transform: translateX(0);
+  transform: perspective(1200px) rotateY(0deg) translateX(0) scale(1);
 }
 
 .reveal-right {
-  transform: translateX(50px);
+  transform: perspective(1200px) rotateY(14deg) translateX(55px) scale(0.94);
+  transform-origin: left center;
   transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-right.revealed {
   opacity: 1;
-  transform: translateX(0);
+  transform: perspective(1200px) rotateY(0deg) translateX(0) scale(1);
 }
 
 .reveal-zoom {
-  transform: scale(0.92);
+  transform: perspective(1200px) rotateX(-12deg) scale(0.9);
+  transform-origin: center bottom;
   transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-zoom.revealed {
   opacity: 1;
-  transform: scale(1);
+  transform: perspective(1200px) rotateX(0deg) scale(1);
 }
 
 /* MOUSE SPOTLIGHT FOLLOWER EFFECT */
